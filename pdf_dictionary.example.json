@@ -21,9 +21,9 @@
         "meanings": ["عن", "حول", "بخصوص"]
       }
     ],
-    "pronunciation": "",
-    "synonyms": [],
-    "audio": ""
+    "pronunciation": "əˈbaʊt",   // 👈 add this
+  "synonyms": [],
+  "audio": ""  
   },
   "above": {
     "word": "above",
