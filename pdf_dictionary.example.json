@@ -1,4 +1,4 @@
-const dictionaryData = {
+  {
     "Able": {
         "word": "Able",
         language: "English",
@@ -193,5 +193,2577 @@ const dictionaryData = {
         pronunciation: "əˈlɑːrm",
         synonyms: [],
         audio: "Alarm"
-    }
-};
+    },
+ 
+  "a aggression": {
+    "word": "a aggression",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏عدوان",
+          "إعتداء"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a bone": {
+    "word": "a bone",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏هيكل عظمي",
+          "عظمة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a competitive": {
+    "word": "a competitive",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏تنافسي"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a diminish": {
+    "word": "a diminish",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vi",
+        "meanings": [
+          "‏قل",
+          "نقصٍ",
+          "تناقص"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a eraser": {
+    "word": "a eraser",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏محاة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a existence": {
+    "word": "a existence",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏وجود",
+          "نشوء",
+          "بقاء"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a fore": {
+    "word": "a fore",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏مقدمة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a goal": {
+    "word": "a goal",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏هدف",
+          "غاية",
+          "مرمى"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a hasten": {
+    "word": "a hasten",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏عجل",
+          "حث"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a indulge": {
+    "word": "a indulge",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vi",
+        "meanings": [
+          "‏منغمس في الملذات"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a jealousy": {
+    "word": "a jealousy",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏غيرة",
+          "حسد"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a loss": {
+    "word": "a loss",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏خسارة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a monster": {
+    "word": "a monster",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "BF ‏وحش"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a politician": {
+    "word": "a politician",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏السياسي",
+          "وجل السياسة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a polygamy": {
+    "word": "a polygamy",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏تعدد الزوجات"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a pottery": {
+    "word": "a pottery",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏فخار",
+          "صناعة الفخار أو الخزرف"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a reaction": {
+    "word": "a reaction",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏تفاعل",
+          "Jad ‏رد"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a reinforce": {
+    "word": "a reinforce",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏قوّى",
+          "دعم"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a suspicious": {
+    "word": "a suspicious",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏مدير الشك",
+          "مفعم بالشك"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a treasure": {
+    "word": "a treasure",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏ذخيرة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a verbal": {
+    "word": "a verbal",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏فعلي",
+          "‏لفظي"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a void": {
+    "word": "a void",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏خال",
+          "خاو"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "a vomit": {
+    "word": "a vomit",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vi",
+        "meanings": [
+          "‏قاء",
+          "تقيّاء"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "about": {
+    "word": "about",
+    "language": "English",
+    "translations": [
+      {
+        "type": "prep",
+        "meanings": [
+          "‏نحو",
+          "حول",
+          "عن",
+          "بشأن",
+          "بخصوص",
+          "حوالي",
+          "على وشك أن"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "above": {
+    "word": "above",
+    "language": "English",
+    "translations": [
+      {
+        "type": "prep",
+        "meanings": [
+          "‏أكثر",
+          "أعلى",
+          "فوق"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "absolute": {
+    "word": "absolute",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏مُطلق",
+          "كامل"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "absolution": {
+    "word": "absolution",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏غفران",
+          "مغفرة",
+          "حل من"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "academy": {
+    "word": "academy",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏أكاديمية",
+          "مجمع"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "accident": {
+    "word": "accident",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏حادث",
+          "إصابة",
+          "عرض",
+          "صفة غير جوهرية"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "action": {
+    "word": "action",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏طريقة عمل",
+          "عمل",
+          "إجراء"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "active": {
+    "word": "active",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏فاعل",
+          "نشط",
+          "رشيق",
+          "فعال"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "actually": {
+    "word": "actually",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏في الواقع",
+          "فعلاً",
+          "حقاً"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "after": {
+    "word": "after",
+    "language": "English",
+    "translations": [
+      {
+        "type": "prep",
+        "meanings": [
+          "‏إبتغاء",
+          "سعي وراء",
+          "بعد",
+          "تلو",
+          "في أثر"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "against": {
+    "word": "against",
+    "language": "English",
+    "translations": [
+      {
+        "type": "prep",
+        "meanings": [
+          "‏في مواجهة",
+          "ضدّ",
+          "على مقابل"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "aggressive": {
+    "word": "aggressive",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏عدائي",
+          "عدواني"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "aging": {
+    "word": "aging",
+    "language": "English",
+    "translations": [
+      {
+        "type": "v",
+        "meanings": [
+          "‏يعمر"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "agree": {
+    "word": "agree",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vi",
+        "meanings": [
+          "‏وافق على"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "aid": {
+    "word": "aid",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏معاونة",
+          "مساعدة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "alarm": {
+    "word": "alarm",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏إنذار بخطر",
+          "أداة الإنذار بخطر",
+          "فزع",
+          "رعب"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "alcohol": {
+    "word": "alcohol",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏كحول",
+          "مشروبات روحيّة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "alike": {
+    "word": "alike",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adv",
+        "meanings": [
+          "‏سواء",
+          "بالعساوي‎ de ‏على"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "almost": {
+    "word": "almost",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adv",
+        "meanings": [
+          "‏أوشك أن",
+          "تقريبا",
+          "ما يقارب",
+          "كاد أن"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "alone": {
+    "word": "alone",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏منفرد",
+          "وحيد"
+        ]
+      },
+      {
+        "type": "adv",
+        "meanings": [
+          "‏على حدّة",
+          "على انفراد"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "alphabet": {
+    "word": "alphabet",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "slab ‏الأبجدية",
+          "حروف"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "altar": {
+    "word": "altar",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏مذبح"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "alternative": {
+    "word": "alternative",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏خياري",
+          "تخييري"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "among": {
+    "word": "among",
+    "language": "English",
+    "translations": [
+      {
+        "type": "prep",
+        "meanings": [
+          "‏من بين",
+          "في وسط",
+          "بين",
+          "في عداد",
+          "فيما بين"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "amount": {
+    "word": "amount",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏حاصل الجمع",
+          "مبلغ",
+          "مقدار",
+          "كمية",
+          "مجموع"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "ancient": {
+    "word": "ancient",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏قديم",
+          "عتيق"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "annoying": {
+    "word": "annoying",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏مضايق"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "apart": {
+    "word": "apart",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adi",
+        "meanings": [
+          "‏مستقل",
+          "منفصل"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "apartment": {
+    "word": "apartment",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏شقة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "background": {
+    "word": "background",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏خلفية",
+          "بيئة المرء أو نشأته أو ثقافته أو ماضيه"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "backing": {
+    "word": "backing",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏عون",
+          "دعم",
+          "تأييد"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "backward": {
+    "word": "backward",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏عكسياً",
+          "متخلف",
+          "تراجعي"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bad fake": {
+    "word": "bad fake",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏تزييف",
+          "تقليد",
+          "إحتيال"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "balcony": {
+    "word": "balcony",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏شرفة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "band": {
+    "word": "band",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏قيد",
+          "إلتزام",
+          "رابطة العهد"
+        ]
+      },
+      {
+        "type": "pt",
+        "meanings": [
+          "‏قيد",
+          "إلتزام",
+          "رابطة العهد"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bankrupt": {
+    "word": "bankrupt",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏افلاسي مفتقر لشيء"
+        ]
+      },
+      {
+        "type": "n",
+        "meanings": [
+          "‏مفلس",
+          "عاجز عن دفع ديونه"
+        ]
+      },
+      {
+        "type": "vt",
+        "meanings": [
+          "‏أفلس"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bargain": {
+    "word": "bargain",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏إتفاق على بيع",
+          "مبايعة",
+          "مساومة",
+          "مشارطة",
+          "صفقة",
+          "صفقة رابكة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bargaining": {
+    "word": "bargaining",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏مساومة",
+          "مساومة سياسية"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bay": {
+    "word": "bay",
+    "language": "English",
+    "translations": [
+      {
+        "type": "0",
+        "meanings": [
+          "‏شرم",
+          "خليج"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "beach": {
+    "word": "beach",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏شاطئ البحر",
+          "منطقة ساحلية"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bear": {
+    "word": "bear",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏دب"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "beastly": {
+    "word": "beastly",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏فظ",
+          "غليظ",
+          "رديء"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "beg": {
+    "word": "beg",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏إستجدى",
+          "توسّل إلى",
+          "تضرّع إلى"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "begin": {
+    "word": "begin",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vi",
+        "meanings": [
+          "‏افتتح",
+          "بدأ",
+          "شرع",
+          "أخذ"
+        ]
+      },
+      {
+        "type": "vt",
+        "meanings": [
+          "‏افتتح",
+          "بدأ",
+          "شرع",
+          "أخذ"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "behold": {
+    "word": "behold",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏شاهد",
+          "عاين"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "belong": {
+    "word": "belong",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vi",
+        "meanings": [
+          "‏إنتمى إلى",
+          "إنتسب",
+          "خصّه",
+          "كان ملكا له"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "beneath": {
+    "word": "beneath",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adv",
+        "meanings": [
+          "‏تحت"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bes erase": {
+    "word": "bes erase",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏ع"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "betray": {
+    "word": "betray",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏غدر",
+          "خان",
+          "أفشى سرًا"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bottle": {
+    "word": "bottle",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏زجاجة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "boxer": {
+    "word": "boxer",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏ملاكم"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "brain": {
+    "word": "brain",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏دماغ 0 مخ"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "brainless": {
+    "word": "brainless",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏ضعيف العقل"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "brainwash": {
+    "word": "brainwash",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏غسل الدماغ"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "branch": {
+    "word": "branch",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vi",
+        "meanings": [
+          "‏أطلع",
+          "تفرع"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bridge": {
+    "word": "bridge",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "A ‏أقام جسر على"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "brief": {
+    "word": "brief",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏مختصرة",
+          "ملخخص قصير أو دعوى‎ at"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "bundle": {
+    "word": "bundle",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏حزمة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "burn": {
+    "word": "burn",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vi",
+        "meanings": [
+          "‏إحترق",
+          "إشتعل"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "butter": {
+    "word": "butter",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏زبدة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "buy": {
+    "word": "buy",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏إشترى"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cabin": {
+    "word": "cabin",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏كوخ",
+          "قمرة",
+          "غرفة",
+          "مقصورة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cabinet": {
+    "word": "cabinet",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏وزراء",
+          "أعضاء وزارة‎ uke",
+          "‏خزانة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cable": {
+    "word": "cable",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏كابل",
+          "سلك"
+        ]
+      },
+      {
+        "type": "vt",
+        "meanings": [
+          "‏يبرق",
+          "يثبت بأسلاك",
+          "ربط بكبل"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cage": {
+    "word": "cage",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏قفص"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "calamitous": {
+    "word": "calamitous",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏كثير البلايا",
+          "مليء بالكوارث",
+          "مفجع"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "calamity": {
+    "word": "calamity",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏نائبة",
+          "قارعة",
+          "نكبة",
+          "فاجعة",
+          "كارثة",
+          "مصيبة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "calculate": {
+    "word": "calculate",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏حسب",
+          "أحصى",
+          "قدّر",
+          "اعتقد",
+          "ظنّ"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "camouflage": {
+    "word": "camouflage",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏خداع",
+          "تمويه",
+          "تعميه"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "camp": {
+    "word": "camp",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏معسكر",
+          "مخيم"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "campaign": {
+    "word": "campaign",
+    "language": "English",
+    "translations": [
+      {
+        "type": "a",
+        "meanings": [
+          "‏“ملة (عسكرية أو سياسيّة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "canal": {
+    "word": "canal",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏قناة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "candid": {
+    "word": "candid",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏مخلص",
+          "صريح",
+          "نزيه"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cant": {
+    "word": "cant",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏مداهنة",
+          "رياء",
+          "نفاق"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "capabilities": {
+    "word": "capabilities",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏قدرات قابلة للتطور"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "capability": {
+    "word": "capability",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏مقدرة",
+          "موهبة",
+          "قدرة",
+          "قابلية للتعحسن"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "capable": {
+    "word": "capable",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adi",
+        "meanings": [
+          "‏قدير",
+          "بارع",
+          "قابل ل",
+          "مؤهل ل"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "capacity": {
+    "word": "capacity",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏حمولة",
+          "سعة",
+          "استيعاب",
+          "اتساع",
+          "قدرة عقلية"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "capital": {
+    "word": "capital",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏رئيسي",
+          "أصلي",
+          "ممتاز",
+          "من الطراز الأول"
+        ]
+      },
+      {
+        "type": "n",
+        "meanings": [
+          "‏عاصمة",
+          "حرف كبير",
+          "رأس مال",
+          "أموال",
+          "ثروة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "captain": {
+    "word": "captain",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏نقيب",
+          "ربان",
+          "قبطان",
+          "رئيس فرقة رياضية"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "captivate": {
+    "word": "captivate",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏سلب",
+          "فتن",
+          "خلب",
+          "سبى",
+          "سحر"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "captivation": {
+    "word": "captivation",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏أسر",
+          "سبي"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "captive": {
+    "word": "captive",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏أسير",
+          "سبي",
+          "مقيد"
+        ]
+      },
+      {
+        "type": "n",
+        "meanings": [
+          "‏أسير",
+          "سبي",
+          "مقيد"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "captor": {
+    "word": "captor",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏آسر",
+          "ساب"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "capture": {
+    "word": "capture",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏أسر",
+          "غنم",
+          "استولى على",
+          "قبض على",
+          "فاز ب"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "care": {
+    "word": "care",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏عناية",
+          "اعتناء",
+          "اهتمام",
+          "رعاية",
+          "حرص"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "career": {
+    "word": "career",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏سير الحياة",
+          "العملية",
+          "مهنة",
+          "سلك"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "careful": {
+    "word": "careful",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏حذر",
+          "محترس",
+          "منتبه"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "careless": {
+    "word": "careless",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏خلو من الحموم",
+          "لا مبال",
+          "مهمل",
+          "طائش"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cargo": {
+    "word": "cargo",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏حمولة",
+          "شضحنة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "carve": {
+    "word": "carve",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏ينحت تمثالاً",
+          "نحت",
+          "نقش",
+          "حفر"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "carving": {
+    "word": "carving",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏نقش",
+          "حفر",
+          "فن النحت أو الخفر"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "case": {
+    "word": "case",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏حالة",
+          "ظرف",
+          "مسألة",
+          "دعوى",
+          "قضية",
+          "غلاف"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "caste": {
+    "word": "caste",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏طائفة",
+          "طبقة خاصة عند الهندوس"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "castle": {
+    "word": "castle",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏قلعة",
+          "حصن",
+          "قصر"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cataclysm": {
+    "word": "cataclysm",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏كارثة",
+          "جائحة",
+          "قلب الأوضاع الأجتماعية"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "catastrophe": {
+    "word": "catastrophe",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏كارثة",
+          "نكبة",
+          "فاجعة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "catch": {
+    "word": "catch",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏أمسك",
+          "قبض على",
+          "صاد",
+          "خدع"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cause": {
+    "word": "cause",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏سبب"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cave": {
+    "word": "cave",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏كهف",
+          "مغارة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cavity": {
+    "word": "cavity",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏فجوة",
+          "تجويف",
+          "حفرة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cease": {
+    "word": "cease",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏توقف",
+          "إنقطاع"
+        ]
+      },
+      {
+        "type": "vi",
+        "meanings": [
+          "‏توقف",
+          "إنتهى",
+          "إنقطع"
+        ]
+      },
+      {
+        "type": "vt",
+        "meanings": [
+          "‏أوقف",
+          "قطع",
+          "أفى"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cease-fire": {
+    "word": "cease-fire",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏وقف إطلاق النار"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "ceiling": {
+    "word": "ceiling",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏سقف"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "ceramic": {
+    "word": "ceramic",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏فخاري"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "chaos": {
+    "word": "chaos",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏فوضى",
+          "تشوّش",
+          "بلبلة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "chaotic": {
+    "word": "chaotic",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏عديم النظام"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "characteristic": {
+    "word": "characteristic",
+    "language": "English",
+    "translations": [
+      {
+        "type": "1",
+        "meanings": [
+          "‏مميزة",
+          "خصيصة"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "charge": {
+    "word": "charge",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏شحنة",
+          "حشوة",
+          "عبوة"
+        ]
+      },
+      {
+        "type": "vi",
+        "meanings": [
+          "‏هجم على",
+          "أغار على",
+          "‏شحن",
+          "ملا",
+          "طلب ثمن",
+          "أصدر تعليمات إلى",
+          "طلب مبلغ مقابل"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "chase": {
+    "word": "chase",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏طارد",
+          "لاحق"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "chew": {
+    "word": "chew",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏لاك",
+          "مضغ"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "complain": {
+    "word": "complain",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vi",
+        "meanings": [
+          "‏شكا",
+          "تذمّر",
+          "إشت"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "complaint": {
+    "word": "complaint",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏تشك",
+          "تذمّر",
+          "شكوى"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "complex": {
+    "word": "complex",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏مركب",
+          "معقد"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "component": {
+    "word": "component",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏عنصر",
+          "مركب"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "criminology": {
+    "word": "criminology",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏علم الإجرام"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "culture": {
+    "word": "culture",
+    "language": "English",
+    "translations": [
+      {
+        "type": "n",
+        "meanings": [
+          "‏ثقافة",
+          "تثقيف"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cultured": {
+    "word": "cultured",
+    "language": "English",
+    "translations": [
+      {
+        "type": "adj",
+        "meanings": [
+          "‏رفيع",
+          "متحضر",
+          "راق"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+,
+  "cure": {
+    "word": "cure",
+    "language": "English",
+    "translations": [
+      {
+        "type": "vt",
+        "meanings": [
+          "‏شفى",
+          "خلص"
+        ]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+
+}
