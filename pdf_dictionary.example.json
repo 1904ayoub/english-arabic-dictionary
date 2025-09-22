@@ -4,40 +4,6 @@
     "language": "English",
     "translations": [
       {
-        "type": "adj",
-        "meanings": [
-          "قادر",
-          "متمكن"
-        ]
-      }
-    ],
-    "pronunciation": "",
-    "synonyms": [],
-    "audio": ""
-  },
-  "about": {
-    "word": "about",
-    "language": "English",
-    "translations": [
-      {
-        "type": "prep",
-        "meanings": [
-          "عن",
-          "حول",
-          "بخصوص"
-        ]
-      }
-    ],
-    "pronunciation": "",
-    "synonyms": [],
-    "audio": ""
-  }
-}{
-  "able": {
-    "word": "able",
-    "language": "English",
-    "translations": [
-      {
         "type": "unknown",
         "meanings": ["قادر", "متمكن"]
       }
@@ -85,5 +51,5 @@
     "synonyms": [],
     "audio": ""
   }
-  // ... more entries ...
+  
 }
