@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English-Arabic Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Top Header with Logo -->
+        <header class="top-header">
+           <img src="assets/logo.png" alt="Brand Logo" class="brand-logo-img" style="width: 100px; height: auto;">
+        </header>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="content-area">
+                <div class="page-header">
+                    <h1 class="title">English ⇄ Arabic Dictionary</h1>
+                    <p class="subtitle">Search words in English or Arabic</p>
+                </div>
+
+                <!-- Owl Centered Above Search -->
+                <div class="logo-owl-section" style="text-align: center; margin-bottom: 20px;">
+                    <img src="assets/owl.png" alt="Owl Icon" class="owl-icon" style="width: 100px; height: auto;">
+
+                </div>
+
+                <div class="search-container">
+                    <div class="search-box">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="search-input" 
+                            placeholder="Type a word in English or Arabic..."
+                            autocomplete="off"
+                        >
+                        <button id="searchBtn" class="search-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="M21 21L16.65 16.65"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="results-container" id="resultsContainer">
+                    <div class="welcome-message" id="welcomeMessage">
+                        <div class="welcome-icon">📚</div>
+                        <h3>Welcome to the Dictionary</h3>
+                        <p>Start typing to search for English or Arabic words</p>
+                    </div>
+                </div>
+
+                <div class="loading" id="loadingIndicator" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Searching...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dictionary-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
