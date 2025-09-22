@@ -1,4 +1,4 @@
-const dictionaryData = {
+ {
     "Able": {
         word: "Able",
         language: "English",
