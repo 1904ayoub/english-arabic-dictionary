@@ -32,4 +32,58 @@
     "synonyms": [],
     "audio": ""
   }
+}{
+  "able": {
+    "word": "able",
+    "language": "English",
+    "translations": [
+      {
+        "type": "unknown",
+        "meanings": ["قادر", "متمكن"]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  },
+  "about": {
+    "word": "about",
+    "language": "English",
+    "translations": [
+      {
+        "type": "unknown",
+        "meanings": ["عن", "حول", "بخصوص"]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  },
+  "above": {
+    "word": "above",
+    "language": "English",
+    "translations": [
+      {
+        "type": "unknown",
+        "meanings": ["فوق", "أعلى"]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  },
+  "accept": {
+    "word": "accept",
+    "language": "English",
+    "translations": [
+      {
+        "type": "unknown",
+        "meanings": ["يقبل", "يرضى"]
+      }
+    ],
+    "pronunciation": "",
+    "synonyms": [],
+    "audio": ""
+  }
+  // ... more entries ...
 }
