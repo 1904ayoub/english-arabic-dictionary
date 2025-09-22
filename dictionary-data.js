@@ -461,58 +461,36 @@ function searchDictionary(query) {
     }
     
     return uniqueResults;
-}// merge_pdf_to_dictionary.js (Node script)
-// Usage: node merge_pdf_to_dictionary.js pdf_dictionary.json dictionary-data.js
-const fs = require('fs');
-const path = require('path');
+} // Merge extra entries from an external JSON into dictionaryData at runtime
+async function mergeExternalJSON(url) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('Failed to fetch ' + url);
+    const extra = await res.json();
 
-if (process.argv.length < 4) {
-  console.error("Usage: node merge_pdf_to_dictionary.js <pdf_json> <dictionary_js>");
-  process.exit(1);
-}
+    // Ensure global is there
+    window.dictionaryData = window.dictionaryData || dictionaryData;
 
-const pdfJsonPath = process.argv[2];
-const dictJsPath = process.argv[3];
+    let added = 0, skipped = 0;
+    for (const [k, v] of Object.entries(extra)) {
+      const key = (k || (v && v.word) || '').toLowerCase().trim();
+      if (!key) continue;
 
-const pdfObj = JSON.parse(fs.readFileSync(pdfJsonPath, 'utf8'));
-
-// Read dictionary-data.js and extract the object literal
-let dictJs = fs.readFileSync(dictJsPath, 'utf8');
-
-// naive extraction: find the first "const dictionaryData = {" and the matching closing "};"
-const startIdx = dictJs.indexOf("const dictionaryData");
-if (startIdx === -1) {
-  console.error("Could not find 'const dictionaryData' in", dictJsPath);
-  process.exit(1);
-}
-const objStart = dictJs.indexOf("{", startIdx);
-const objEnd = dictJs.lastIndexOf("};");
-if (objStart === -1 || objEnd === -1) {
-  console.error("Could not parse dictionary object boundaries.");
-  process.exit(1);
-}
-const objText = dictJs.substring(objStart, objEnd+1);
-
-// Evaluate it safely? We'll write a small wrapper to convert to JSON by replacing trailing commas, etc.
-// Simpler: attempt to require it as a module by writing a temp file that exports it.
-const tmpModulePath = path.join(__dirname, "tmp_dictionary_module.js");
-fs.writeFileSync(tmpModulePath, dictJs + "\nmodule.exports = dictionaryData;", 'utf8');
-const existing = require(tmpModulePath);
-
-const merged = Object.assign({}, existing);
-
-// Merge: for each key in pdfObj, if key exists do not override (unless you want), here we'll add and override if missing.
-for (const [k,v] of Object.entries(pdfObj)) {
-  if (!merged[k]) {
-    merged[k] = v;
-  } else {
-    // if exists, keep existing but if the existing is missing translations add them:
-    // simple: do not override existing; you can change behavior here
+      if (!window.dictionaryData[key]) {
+        window.dictionaryData[key] = v;
+        added++;
+      } else {
+        // keep your existing values; uncomment next line to override if you ever want:
+        // window.dictionaryData[key] = v;
+        skipped++;
+      }
+    }
+    console.log(`Merged ${added} entries from ${url} (skipped ${skipped} existing)`);
+  } catch (err) {
+    console.error('mergeExternalJSON error:', err);
   }
 }
+// Load external data (when hosted on GitHub Pages / Netlify)
+mergeExternalJSON('pdf_dictionary.example.json'); // make sure this file is in the repo root
 
-// write merged file
-const outPath = path.join(__dirname, "dictionary-data.merged.js");
-const outText = "const dictionaryData = " + JSON.stringify(merged, null, 2) + ";\n\nexport default dictionaryData;";
-fs.writeFileSync(outPath, outText, 'utf8');
-console.log("Merged dictionary saved to", outPath);
+
