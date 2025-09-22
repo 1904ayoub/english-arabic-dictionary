@@ -1,26 +1,25 @@
-// ================= Dictionary Application =================
-let dictionaryData = {}; // will be loaded from JSON
+ // ================= Dictionary Application =================
+let dictionaryData = {}; // offline data
 
-// Load dictionary.json dynamically at startup
+// Load local JSON dictionary (offline fallback)
 async function loadDictionary() {
   try {
-    // Prefer your custom JSON file
     const res = await fetch("pdf_dictionary.example.json");
-    if (!res.ok) throw new Error("Failed to load pdf_dictionary.example.json");
+    if (!res.ok) throw new Error("Failed to load offline JSON");
     dictionaryData = await res.json();
     console.log("✅ Offline dictionary loaded:", Object.keys(dictionaryData).length, "entries");
   } catch (err) {
-    console.error("❌ Error loading pdf_dictionary.example.json:", err);
-    dictionaryData = {}; // empty fallback
+    console.error("❌ Offline dictionary load error:", err);
+    dictionaryData = {};
   }
 }
 
-// Helper: detect Arabic text
+// Detect Arabic text
 function isArabicText(text) {
   return /[\u0600-\u06FF]/.test(text);
 }
 
-// Helper: search local JSON dictionary
+// Search inside offline JSON
 function searchDictionary(query) {
   if (!query || !query.trim()) return [];
   const results = [];
@@ -31,13 +30,11 @@ function searchDictionary(query) {
   for (const entry of Object.values(dictionaryData)) {
     let found = false;
 
-    // Match word itself
     if (isAr ? entry.word.includes(norm) : entry.word.toLowerCase().includes(lower)) {
       results.push(entry);
       continue;
     }
 
-    // Match translations
     for (const t of entry.translations) {
       if (t.meanings.some(m => (isAr ? m.includes(norm) : m.toLowerCase().includes(lower)))) {
         results.push(entry);
@@ -47,13 +44,11 @@ function searchDictionary(query) {
     }
     if (found) continue;
 
-    // Match synonyms
     if (entry.synonyms.some(s => (isAr ? s.includes(norm) : s.toLowerCase().includes(lower)))) {
       results.push(entry);
     }
   }
 
-  // Deduplicate
   const seen = new Set();
   return results.filter(e => {
     const key = `${e.word}-${e.language}`;
@@ -63,7 +58,7 @@ function searchDictionary(query) {
   });
 }
 
-// ================= Main Class =================
+// ================= Dictionary Class =================
 class Dictionary {
   constructor() {
     this.searchInput = document.getElementById("searchInput");
@@ -73,9 +68,6 @@ class Dictionary {
     this.welcomeMessage = document.getElementById("welcomeMessage");
 
     this.currentSearchResults = [];
-    this.apiCache = new Map();
-    this.maxCacheSize = 1000;
-    this.cacheExpiry = 60 * 60 * 1000; // 1h
 
     this.init();
   }
@@ -104,19 +96,19 @@ class Dictionary {
       this.currentSearchResults = combined;
       this.displayResults(combined, query);
     } catch (err) {
-      console.error("⚠️ API error, using offline JSON:", err);
+      console.error("⚠️ API error, fallback to offline:", err);
       const localResults = searchDictionary(query);
       this.displayResults(localResults, query);
     }
   }
 
-  // ================= API Search =================
+  // ================= API Logic =================
   async searchAPIs(query) {
     const results = [];
     const isAr = isArabicText(query);
 
     if (!isAr) {
-      // English → English def + Arabic translation
+      // English → English + Arabic
       const [engDef, arTrans] = await Promise.allSettled([
         this.fetchEnglishDefinition(query),
         this.fetchArabicTranslation(query)
@@ -125,7 +117,10 @@ class Dictionary {
       if (engDef.status === "fulfilled" && engDef.value) {
         const entry = engDef.value;
         if (arTrans.status === "fulfilled" && arTrans.value) {
-          entry.translations.push({ type: "Arabic translation", meanings: [arTrans.value] });
+          entry.translations.push({
+            type: "Arabic translation",
+            meanings: [arTrans.value]
+          });
         }
         results.push(entry);
       }
@@ -137,42 +132,21 @@ class Dictionary {
           word: query,
           language: "Arabic",
           translations: [{ type: "English translation", meanings: [enTrans] }],
-          pronunciation: this.arabicToTransliteration(query),
+          pronunciation: "",
           synonyms: [],
-          audio: `api_ar_${Date.now()}`
+          audio: ""
         });
 
         const engDef = await this.fetchEnglishDefinition(enTrans);
         if (engDef) results.push(engDef);
       }
     }
+
     return results;
   }
 
-  // ================= English Definitions =================
+  // English Definitions API
   async fetchEnglishDefinition(word) {
-    const cached = this.getFromCache(word);
-    if (cached) return cached;
-
-    const apis = [
-      () => this.fetchFromFreeDictionary(word),
-      () => this.fetchFromWordnik(word),
-      () => this.fetchFromGlosbe(word, "en", "ar")
-    ];
-
-    for (const api of apis) {
-      try {
-        const result = await api();
-        if (result) {
-          this.addToCache(word, result);
-          return result;
-        }
-      } catch { continue; }
-    }
-    return null;
-  }
-
-  async fetchFromFreeDictionary(word) {
     try {
       const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(word)}`);
       if (!res.ok) return null;
@@ -185,58 +159,18 @@ class Dictionary {
         language: "English",
         translations: entry.meanings.map(m => ({
           type: m.partOfSpeech,
-          meanings: m.definitions.slice(0, 3).map(d => d.definition)
+          meanings: m.definitions.slice(0, 2).map(d => d.definition)
         })),
         pronunciation: entry.phonetics?.find(p => p.text)?.text || "",
         synonyms: [...new Set(entry.meanings.flatMap(m => m.definitions.flatMap(d => d.synonyms || [])))],
-        audio: `free_${word}_${Date.now()}`,
-        source: "FreeDictionary"
+        audio: ""
       };
-    } catch { return null; }
+    } catch {
+      return null;
+    }
   }
 
-  async fetchFromWordnik(word) {
-    try {
-      const res = await fetch(`https://api.wordnik.com/v4/word.json/${encodeURIComponent(word)}/definitions?limit=4&includeRelated=false&useCanonical=false&api_key=demo`);
-      if (!res.ok) return null;
-      const data = await res.json();
-      if (!data.length) return null;
-
-      return {
-        word,
-        language: "English",
-        translations: data.map(d => ({ type: d.partOfSpeech || "definition", meanings: [d.text] })),
-        pronunciation: "",
-        synonyms: [],
-        audio: `wordnik_${word}_${Date.now()}`,
-        source: "Wordnik"
-      };
-    } catch { return null; }
-  }
-
-  async fetchFromGlosbe(word, from = "en", to = "ar") {
-    try {
-      const res = await fetch(`https://glosbe.com/gapi/translate?from=${from}&dest=${to}&format=json&phrase=${encodeURIComponent(word)}&pretty=true`);
-      if (!res.ok) return null;
-      const data = await res.json();
-      if (!data.tuc?.length) return null;
-
-      return {
-        word,
-        language: from === "en" ? "English" : "Arabic",
-        translations: [{
-          type: to === "ar" ? "Arabic translation" : "English translation",
-          meanings: data.tuc.slice(0, 5).map(t => t.phrase?.text).filter(Boolean)
-        }],
-        pronunciation: "",
-        synonyms: [],
-        audio: `glosbe_${word}_${Date.now()}`,
-        source: "Glosbe"
-      };
-    } catch { return null; }
-  }
-
-  // ================= Translations =================
+  // LibreTranslate
   async fetchArabicTranslation(text) {
     return this.fetchViaLibre(text, "en", "ar");
   }
@@ -253,26 +187,9 @@ class Dictionary {
       if (!res.ok) return null;
       const data = await res.json();
       return data.translatedText;
-    } catch { return null; }
-  }
-
-  // ================= Cache =================
-  getFromCache(word) {
-    const c = this.apiCache.get(word.toLowerCase());
-    if (!c) return null;
-    if (Date.now() - c.timestamp > this.cacheExpiry) {
-      this.apiCache.delete(word.toLowerCase());
+    } catch {
       return null;
     }
-    return c.data;
-  }
-  addToCache(word, data) {
-    if (this.apiCache.size >= this.maxCacheSize) this.cleanupCache();
-    this.apiCache.set(word.toLowerCase(), { data, timestamp: Date.now() });
-  }
-  cleanupCache() {
-    const oldest = [...this.apiCache.entries()].sort((a, b) => a[1].timestamp - b[1].timestamp);
-    for (let i = 0; i < oldest.length * 0.2; i++) this.apiCache.delete(oldest[i][0]);
   }
 
   // ================= UI =================
@@ -311,11 +228,6 @@ class Dictionary {
       }
     }
     return combined;
-  }
-
-  arabicToTransliteration(word) {
-    const map = { 'ا': 'a','ب': 'b','ت': 't','ث': 'th','ج': 'j','ح': 'h','خ': 'kh','د': 'd','ذ': 'dh','ر': 'r','ز': 'z','س': 's','ش': 'sh','ص': 's','ض': 'd','ط': 't','ظ': 'dh','ع': 'ʿ','غ': 'gh','ف': 'f','ق': 'q','ك': 'k','ل': 'l','م': 'm','ن': 'n','ه': 'h','و': 'w','ي': 'y','ة': 'ah','ى': 'a','ء': 'ʔ' };
-    return word.split("").map(ch => map[ch] || ch).join("");
   }
 }
 
