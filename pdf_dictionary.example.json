@@ -8,7 +8,7 @@
         "meanings": ["قادر", "متمكن"]
       }
     ],
-    "pronunciation": "",
+    "pronunciation": "ˈeɪ.bəl",
     "synonyms": [],
     "audio": ""
   },
@@ -21,9 +21,9 @@
         "meanings": ["عن", "حول", "بخصوص"]
       }
     ],
-    "pronunciation": "əˈbaʊt",   // 👈 add this
-  "synonyms": [],
-  "audio": ""  
+    "pronunciation": "əˈbaʊt",
+    "synonyms": [],
+    "audio": ""
   },
   "above": {
     "word": "above",
@@ -34,7 +34,7 @@
         "meanings": ["فوق", "أعلى"]
       }
     ],
-    "pronunciation": "",
+    "pronunciation": "əˈbʌv",
     "synonyms": [],
     "audio": ""
   },
@@ -47,9 +47,8 @@
         "meanings": ["يقبل", "يرضى"]
       }
     ],
-    "pronunciation": "",
+    "pronunciation": "əkˈsept",
     "synonyms": [],
     "audio": ""
   }
-  
 }
