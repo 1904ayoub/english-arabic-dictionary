@@ -1,16 +1,17 @@
 // ================= Dictionary Application =================
-let dictionaryData = {}; // loaded from dictionary.json
+let dictionaryData = {}; // will be loaded from JSON
 
 // Load dictionary.json dynamically at startup
 async function loadDictionary() {
   try {
-    const res = await fetch("dictionary.json");
-    if (!res.ok) throw new Error("Failed to load dictionary.json");
+    // Prefer your custom JSON file
+    const res = await fetch("pdf_dictionary.example.json");
+    if (!res.ok) throw new Error("Failed to load pdf_dictionary.example.json");
     dictionaryData = await res.json();
-    console.log("✅ Dictionary loaded:", Object.keys(dictionaryData).length, "entries");
+    console.log("✅ Offline dictionary loaded:", Object.keys(dictionaryData).length, "entries");
   } catch (err) {
-    console.error("❌ Error loading dictionary:", err);
-    dictionaryData = {};
+    console.error("❌ Error loading pdf_dictionary.example.json:", err);
+    dictionaryData = {}; // empty fallback
   }
 }
 
@@ -103,7 +104,7 @@ class Dictionary {
       this.currentSearchResults = combined;
       this.displayResults(combined, query);
     } catch (err) {
-      console.error("Search error:", err);
+      console.error("⚠️ API error, using offline JSON:", err);
       const localResults = searchDictionary(query);
       this.displayResults(localResults, query);
     }
