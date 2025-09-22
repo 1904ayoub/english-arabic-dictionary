@@ -1204,4 +1204,3 @@ async function mergeExternalJSON(url) {
 }
 // Load external data (when hosted on GitHub Pages / Netlify)
 mergeExternalJSON('pdf_dictionary.example.json'); // make sure this file is in the repo root
-
