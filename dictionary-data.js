@@ -384,15 +384,15 @@ function searchDictionary(query) {
     if (!query || !query.trim()) {
         return [];
     }
-    
+
     const results = [];
     const normalizedQuery = query.trim();
     const isQueryArabic = isArabicText(normalizedQuery);
     const lowerQuery = normalizedQuery.toLowerCase();
-    
+
     for (const [key, entry] of Object.entries(dictionaryData)) {
         let found = false;
-        
+
         // Direct word match (case-sensitive for Arabic, case-insensitive for English)
         if (isQueryArabic) {
             if (key === normalizedQuery || key.includes(normalizedQuery)) {
@@ -405,9 +405,9 @@ function searchDictionary(query) {
                 found = true;
             }
         }
-        
+
         if (found) continue;
-        
+
         // Search in translations
         for (const translation of entry.translations) {
             if (found) break;
@@ -427,9 +427,9 @@ function searchDictionary(query) {
                 }
             }
         }
-        
+
         if (found) continue;
-        
+
         // Search in synonyms
         for (const synonym of entry.synonyms) {
             if (isQueryArabic) {
@@ -447,11 +447,11 @@ function searchDictionary(query) {
             }
         }
     }
-    
+
     // Remove duplicates based on word and language
     const uniqueResults = [];
     const seen = new Set();
-    
+
     for (const entry of results) {
         const key = `${entry.word}-${entry.language}`;
         if (!seen.has(key)) {
@@ -459,38 +459,6 @@ function searchDictionary(query) {
             uniqueResults.push(entry);
         }
     }
-    
+
     return uniqueResults;
-} // Merge extra entries from an external JSON into dictionaryData at runtime
-async function mergeExternalJSON(url) {
-  try {
-    const res = await fetch(url);
-    if (!res.ok) throw new Error('Failed to fetch ' + url);
-    const extra = await res.json();
-
-    // Ensure global is there
-    window.dictionaryData = window.dictionaryData || dictionaryData;
-
-    let added = 0, skipped = 0;
-    for (const [k, v] of Object.entries(extra)) {
-      const key = (k || (v && v.word) || '').toLowerCase().trim();
-      if (!key) continue;
-
-      if (!window.dictionaryData[key]) {
-        window.dictionaryData[key] = v;
-        added++;
-      } else {
-        // keep your existing values; uncomment next line to override if you ever want:
-        // window.dictionaryData[key] = v;
-        skipped++;
-      }
-    }
-    console.log(`Merged ${added} entries from ${url} (skipped ${skipped} existing)`);
-  } catch (err) {
-    console.error('mergeExternalJSON error:', err);
-  }
-}
-// Load external data (when hosted on GitHub Pages / Netlify)
-mergeExternalJSON('pdf_dictionary.example.json'); // make sure this file is in the repo root
-
-
+} 
