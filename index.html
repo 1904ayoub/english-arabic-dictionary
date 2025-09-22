@@ -9,9 +9,8 @@
 </head>
 <body>
     <div class="container">
-        <!-- Top Header with Logo -->
+        <!-- Top Header -->
         <header class="top-header">
-            <img src="logo.png" alt="Brand Logo" class="brand-logo-img" style="width: 100px; height: auto;">
         </header>
         
         <!-- Main Content -->
@@ -22,9 +21,10 @@
                     <p class="subtitle">Search words in English or Arabic</p>
                 </div>
 
-                <!-- Owl Centered Above Search -->
-                <div class="logo-owl-section" style="text-align: center; margin-bottom: 20px;">
-                    <img src="owl.png" alt="Owl Icon" class="owl-icon" style="width: 100px; height: auto;">
+                <!-- Logo and Owl Above Search -->
+                <div class="logo-owl-section">
+                    <img src="assets/logo.png" alt="Brand Logo" class="brand-logo-img">
+                    <img src="assets/owl.png" alt="Owl Icon" class="owl-icon">
                 </div>
 
                 <div class="search-container">
@@ -45,13 +45,13 @@
                     </div>
                 </div>
 
-                <div class="results-container" id="resultsContainer">
-                    <div class="welcome-message" id="welcomeMessage">
-                        <div class="welcome-icon">📚</div>
-                        <h3>Welcome to the Dictionary</h3>
-                        <p>Start typing to search for English or Arabic words</p>
-                    </div>
-                </div>
+        <div class="results-container" id="resultsContainer">
+            <div class="welcome-message" id="welcomeMessage">
+                <div class="welcome-icon">📚</div>
+                <h3>Welcome to the Dictionary</h3>
+                <p>Start typing to search for English or Arabic words</p>
+            </div>
+        </div>
 
                 <div class="loading" id="loadingIndicator" style="display: none;">
                     <div class="spinner"></div>
@@ -61,7 +61,7 @@
         </div>
     </div>
 
-   
+    <script src="dictionary-data.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
